@@ -1,0 +1,39 @@
+body {
+  background-color: #fafafa;
+}
+
+.cardClick a {
+  text-decoration: none;
+  outline: none;
+  cursor: zoom-in;
+}
+
+.cardClick:hover {
+  box-shadow: 4px 6px 11px 0px rgba(0, 0, 0, 0.247);
+  background-color: #8a8a8a2d;
+}
+
+.photoCard[_ngcontent-c2] {  
+  border-radius: 8px;
+}
+
+.imgName {
+  font-size: 14px;
+  color: #202020;
+}
+
+.photoCard {
+  cursor: zoom-in;
+}
+
+.cardContainer:hover {
+  color: rgba(151, 149, 149, 0.555);
+}
+
+@media (min-width: 900px) {
+  .card-columns {
+      -webkit-column-count: 5;
+      -moz-column-count: 5;
+      column-count: 5
+  }
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="card-columns" id="contentCard">
+      <div class="card border-0 mt-5 cardClick p-2" *ngFor="let imagesResponse of imagesJSON">
+        <a href="#cardDisplay{{imagesResponse.id}}" data-toggle="modal" data-target="#cardDisplay{{imagesResponse.id}}" class="">
+          <img class="card-img-top photoCard" src="{{imagesResponse.urlPhoto}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title imgName">{{imagesResponse.namePhoto}}</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-photo-card></app-photo-card>
